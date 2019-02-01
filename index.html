@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Kahane Devalkar Infrastructures, Industrial Fabrication, Construction</title>
+		<!--mobile apps-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Dream up Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<!--mobile apps-->
+		<!--Custom Theme files -->
+		<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+		<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<!-- //Custom Theme files -->
+
+		<!--web-fonts-->
+		<link href='//fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Poppins:400,500,600' rel='stylesheet' type='text/css'>
+		<!--//web-fonts-->
+	</head>
+	<body>
+		<!-- main content start-->
+		<!--start-home-->
+		<div id="home" class="header">
+			<!--start-header-->
+			<div class="header-strip w3l">
+			   <div class="container">
+			   <p class="phonenum"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> &nbsp; CALL - US : &nbsp;+91 9921404646/9822522025</p>
+				<p class="phonenum two"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> &nbsp;  Pune
+Maharashtra, 411028</p>
+<p class="phonenum two one"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> &nbsp;  Open hours: All Days 9.30am to 8.00pm
+</p>
+				     <div class="main-search">
+											<form>
+											   <input type="text" value="Search" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search';}" class="text"/>
+												<input type="submit" value="">
+											</form>
+									<div class="close"><img src="images/cross.png" /></div>
+								</div>
+									<div class="srch"><button></button></div>
+
+
+				<div class="clearfix"></div>
+			  </div>
+			</div>
+		<div class="header-top w3l">
+		  <div class="container">
+		     <div class="logo"> <a href="index.html"> <h1><img src="images/logo.png" alt=""> KD <span>Infrastructures</span></h1>
+			 <p class="top-para">Scale heights with us</p></a></div>
+
+            <div class="main-nav">
+			  <span class="menu"></span>
+				  <div class="top-menu">
+							 <ul class="nav navbar-nav cl-effect-14">
+
+								<li class="active"><a href="index.html">Home</a></li>
+								<li><a href="#about" class="scroll">About</a></li>
+								<li><a href="#services" class="scroll">Services</a></li>
+								<li><a href="#portfolio" class="scroll">Portfolio</a></li>
+								<li><a href="#ourproject" class="scroll">Our Clients</a></li>
+								<li><a href="#contact" class="scroll">Contact</a></li>
+							</ul>
+				</div>
+             </div>
+
+	<!--End-top-nav-script-->
+		<!--//end-header-->
+		<div class="clearfix"></div>
+    </div>
+	</div>
+      <!--start-banner-->
+   		   <div class="banner agile">
+		      		   <div class="container">
+	            <div class="banner-slider">
+				<div class="callbacks_container">
+					<ul class="rslides" id="slider4">
+					    <li>
+						   <div class="banner-info">
+							      <h3>Welcome to</h3>
+								  <p>Kahane Devalkar Infrastructures</p>
+					             <span>Smart Choice !</span>
+							  </div>
+						</li>
+						<li>
+						   <div class="banner-info">
+							     <h3>Experts in</h3>
+								 <p>Industrial Constructions</p>
+							     <span>Smart Choice !</span>
+							  </div>
+						</li>
+						<li>
+						   <div class="banner-info">
+							     <h3>Experts in</h3>
+								 <p>Industrial Fabrications</p>
+							     <span>Smart Choice !</span>
+							  </div>
+						</li>
+						<li>
+						   <div class="banner-info">
+							     <h3>Your Desire</h3>
+								 <p>WE BUILD YOUR DREAMS </p>
+							     <span>Smart Choice !</span>
+							  </div>
+						</li>
+						<li>
+						   <div class="banner-info">
+							      <h3>We Plan</h3>
+								  <p>WE OFFER DESIGN FOR YOU  </p>
+								   <span>Smart Choice !</span>
+						   </div>
+					  </li>
+					</ul><!--banner Slider starts Here-->
+
+
+			  </div>
+				</div>
+		   </div>
+		</div>
+	</div>
+	  <!--//end-banner-->
+     <!-- app-->
+			<div class="modal ab fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog about" role="document">
+					<div class="modal-content about">
+						<div class="modal-header">
+							<button type="button" class="close ab" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+						<div class="modal-body about">
+								<div class="about">
+<script src='js/jquery.min.js' ></script>
+
+<script>
+	function do_contact()
+	{
+		name = $('#name').val().trim();
+		email = $('#email').val().trim();
+		msg = $('#msg').val().trim();
+
+		if (name != '' && email != '' && msg != '')
+		{
+			$.post("contact.php",
+			{
+				name : name,
+				email : email,
+				msg : msg
+			},
+			function(data)
+			{
+				$('#contact_success').show();
+
+				$('#name').val('');
+				$('#email').val('');
+				$('#msg').val('');
+			});
+		}
+		else
+		{
+			$('#contact_error').show();
+		}
+
+		return false;
+	}
+</script>
+									 <form class="retire">
+										<div style='display:none;color:red' id='contact_error'>Enter All Fields !</div>
+										<div style='display:none;color:green' id='contact_success'>Success !</div>
+										<div class="styled-input">
+									  <input type="text" required="" id='name'>
+									  <label>Your Name</label>
+									  <span></span> </div>
+									<div class="styled-input">
+									  <input type="email" required="" id='email'>
+									  <label>Your Email</label>
+									  <span></span> </div>
+									<div class="styled-input">
+									  <textarea required="" id='msg'></textarea>
+									  <label>Your Message</label>
+									  <span></span> </div>
+										<div class="send">
+											<!-- <input type="submit" value="SUBMIT" onclick='return contact();'>-->
+											<button onclick='return do_contact();'>SUBMIT</button>
+										</div>
+						     </form>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		 <!-- about-type-grid -->
+	<div class="about" id="about">
+	       <div class="container">
+
+					<div class="col-md-7 ab-right">
+										<h2 class="tittle">Welcome to Kahane Develkar<span> Infrastructurs </span></h2>
+										<p>We provide high quality services in the fields of Industrial construction, fabrication. We have successfully completed multiple projects in Maharashtra and Gujrat.  </p>
+										<a href="#" data-toggle="modal" data-target="#myModal1" class="hvr-shutter-in-horizontal">Get A Quote</a>
+
+					</div>
+					<div class="col-md-5 ab-left">
+							 <img src="images/welcome.jpeg"/>
+
+
+						</div>
+
+
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+
+<!-- services-bottom -->
+<div id="services" class="services-list">
+	<div class="container">
+		<h3 class="title"> Services</h3>
+		<span class="line">
+								<span class="sub-line"></span>
+							</span>
+		<div class="services-gds agile-info">
+			<div class="col-md-4 list-gds text-center">
+				<span class="glyphicon glyphicon-ok icon" aria-hidden="true"></span>
+				<h4>Plot Development</h4>
+				<p>Developing plot as per Client requirements with primary road development & wall compound/fencing</p>
+			</div>
+			<div class="col-md-4 list-gds2 text-center">
+				<span class="glyphicon glyphicon-time icon" aria-hidden="true"></span>
+				<h4>Foundation works</h4>
+				<p>All type of Industrial construction including any type of heavy foundations and RCC work as per drawings and client requirements</p>
+			</div>
+			<div class="col-md-4 list-gds3 text-center">
+				<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+				<h4>Industrial Fabrication </h4>
+				<p>Fabrication work of all types of Industrial sheds of any height, cooling tower base and framings machine platform, all type of pipelines, etc.</p>
+			</div>
+				<div class="col-md-4 list-gds4 text-center">
+				<span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+				<h4>Electric,Plumbing and Painting</h4>
+				<p>We provide all type of electic, plumbing and painting services as per drawings and client requirements</p>
+			</div>
+			<div class="col-md-4 list-gds5 text-center">
+				<span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+				<h4>Machine Foundation</h4>
+				<p>Any type of light or heavy machine foundation and errection as per the drawings</p>
+			</div>
+			<div class="col-md-4 list-gds6 text-center">
+				<span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+				<h4>Industrial Flooring</h4>
+				<p>Industrial Tremix flooring with epoxy treatment and all other office floorings</p>
+			</div>
+			<div class="col-md-4 list-gds7 text-center">
+				<span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+				<h4>Road Development</h4>
+				<p>We develop concrete, asphalt road as per client requirements</p>
+			</div>
+		<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!-- //services-bottom -->
+
+<!-- portfolio -->
+<div class="portfolio" id="portfolio">
+		<h3 class="title">Portfolio</h3>
+		<span class="line1">
+								<span class="sub-line1"></span>
+							</span>
+			<div class="portfolio-grids">
+
+				<div class="sap_tabs">
+					<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+						<ul class="resp-tabs-list">
+							<li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>All</span></li>
+							<li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Industrial Fabrication</span></li>
+							<li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>Residential Construction</span></li>
+							<li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>Industrial Construction</span></li>
+							<li class="resp-tab-item" aria-controls="tab_item-4" role="tab"><span>Turn Key projects</span></li>
+							<li class="resp-tab-item" aria-controls="tab_item-5" role="tab"><span>Road Development</span></li>
+						</ul>
+						<div class="resp-tabs-container">
+							<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
+								<div class="col-md-3 team-gd ">
+									<div class="thumb">
+										<a href="#portfolioModal1" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/fab1.jpeg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd ">
+									<div class="thumb">
+										<a href="#portfolioModal3" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/fab8.jpeg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd ">
+									<div class="thumb">
+										<a href="#portfolioModal2" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/fab13.jpeg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd ">
+									<div class="thumb">
+										<a href="#portfolioModal4" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/fab14.jpeg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd yes_marg ">
+									<div class="thumb">
+										<a href="#portfolioModal5" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/ifloor.jpeg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd yes_marg ">
+									<div class="thumb">
+										<a href="#portfolioModal6" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/const1.jpeg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd yes_marg ">
+									<div class="thumb">
+										<a href="#portfolioModal7" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/const2.jpeg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd yes_marg ">
+									<div class="thumb">
+										<a href="#portfolioModal8" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/iconst1.jpeg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd yes_marg ">
+									<div class="thumb">
+										<a href="#portfolioModal21" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/fab21.jpeg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd yes_marg ">
+									<div class="thumb">
+										<a href="#portfolioModal22" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/fab22.jpeg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd yes_marg ">
+									<div class="thumb">
+										<a href="#portfolioModal23" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/fab23.jpeg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd yes_marg ">
+									<div class="thumb">
+										<a href="#portfolioModal24	" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/fab24.jpeg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
+								<div class="col-md-3 team-gd ">
+									<div class="thumb">
+										<a href="#portfolioModal5" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/fab15.jpeg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd  ">
+									<div class="thumb">
+										<a href="#portfolioModal6" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/fab16.jpeg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd ">
+									<div class="thumb">
+										<a href="#portfolioModal7" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/fab5.jpeg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
+								<div class="col-md-3 team-gd ">
+									<div class="thumb">
+										<a href="#portfolioModal2" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/const1.jpeg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd ">
+									<div class="thumb">
+										<a href="#portfolioModal4" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/const2.jpeg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd">
+									<div class="thumb">
+										<a href="#portfolioModal5" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/const3.jpeg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd">
+									<div class="thumb">
+										<a href="#portfolioModal6" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/const4.jpeg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+								<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-3">
+								<div class="col-md-3 team-gd ">
+									<div class="thumb">
+										<a href="#portfolioModal5" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/iconst1.jpeg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd  ">
+									<div class="thumb">
+										<a href="#portfolioModal6" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/iconst2.jpeg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd ">
+									<div class="thumb">
+										<a href="#portfolioModal7" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/iconst3.jpeg" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+<!-- //portfolio -->
+<div class="clients">
+	<div class="container">
+		<div class="clients-grid project">
+			<h3><span>16</span></h3>
+			<p>Happy Client</p>
+		</div>
+		<div class="project-grid project">
+			<h3><span>22</span></h3>
+			<p>Projects</p>
+		</div>
+		<div class="meeting-grid project">
+			<h3><span>20</span></h3>
+			<p>Employees</p>
+		</div>
+	<div class="clearfix"> </div>
+	</div>
+	</div>
+	<!-- //about-type-grid -->
+			<!--top-games-section-->
+					  <div class="top-games-section w3l-agileinfo" id="ourproject">
+		 				 <div class="container">
+							<!--sreen-gallery-cursual-->
+							<div class="col-md-3 top-games">
+							      <h3>Our Clients</h3>
+							</div>
+							<div class="col-md-9 g-views">
+								<ul id="flexiselDemo3">
+									<li>
+									<div class="biseller-column">
+									   <a class="lightbox" href="#goofy">
+												   <img src="images/bitwise.jfif"/>
+												</a>
+												<div class="lightbox-target" id="goofy">
+													  <img src="images/bitwise.jfif"/>
+												   <a class="lightbox-close" href="#"> </a>
+													<div class="clearfix"> </div>
+												</div>
+									</div>
+								</li>
+								<li>
+									<div class="biseller-column">
+									<a class="lightbox" href="#goofy7">
+												  <img src="images/sumashilp.png"/>
+												</a>
+												<div class="lightbox-target" id="goofy7">
+													  <img src="images/sumashilp.png"/>
+												   <a class="lightbox-close" href="#"> </a>
+
+													<div class="clearfix"> </div>
+												</div>
+									</div>
+								</li>
+								<li>
+									<div class="biseller-column">
+									<a class="lightbox" href="#goofy6">
+												  <img src="images/sumasoft.png"/>
+												</a>
+												<div class="lightbox-target" id="goofy6">
+													  <img src="images/sumasoft.png"/>
+												   <a class="lightbox-close" href="#"> </a>
+
+													<div class="clearfix"> </div>
+												</div>
+									</div>
+								</li>
+								<li>
+									<div class="biseller-column">
+									<a class="lightbox" href="#goofy5">
+													<img src="images/Chitrali.PNG"/>
+												</a>
+												<div class="lightbox-target" id="goofy5">
+													<img src="images/Chitrali.PNG"/>
+												   <a class="lightbox-close" href="#"> </a>
+
+													<div class="clearfix"> </div>
+												</div>
+									</div>
+								</li>
+								<li>
+									<div class="biseller-column">
+									<a class="lightbox" href="#goofy4">
+												  <img src="images/hyt.png"/>
+												</a>
+												<div class="lightbox-target" id="goofy4">
+													  <img src="images/hyt.png"/>
+												   <a class="lightbox-close" href="#"> </a>
+
+													<div class="clearfix"> </div>
+												</div>
+									</div>
+								</li>
+								<li>
+									<div class="biseller-column">
+									<a class="lightbox" href="#goofy3">
+												   <img src="images/mang.png"/>
+												</a>
+												<div class="lightbox-target" id="goofy3">
+													<img src="images/mang.png"/>
+												   <a class="lightbox-close" href="#"> </a>
+
+													<div class="clearfix"> </div>
+												</div>
+									</div>
+								</li>
+								<li>
+									<div class="biseller-column">
+												<a class="lightbox" href="#goofy2">
+													<img src="images/daksh.png"/>
+												</a>
+												<div class="lightbox-target" id="goofy2">
+													<img src="images/daksh.png"/>
+												   <a class="lightbox-close" href="#"> </a>
+													<div class="clearfix"> </div>
+												</div>
+									</div>
+								</li>
+							</ul>
+
+						</div>
+				</div>
+		</div>
+
+   <!--bottom-->
+	    <div class="bottom wthree">
+		     <div class="container">
+		       <div class="bottom-top">
+			      <h3>Looking for a quality and  good features
+Infrastructure services for your next project?</h3>
+<a href="#" data-toggle="modal" data-target="#myModal1" class="hvr-shutter-in-horizontal">Contact Us</a>
+			   </div>
+		</div>
+	</div>
+
+	<!--//bottom-->
+<!-- footer -->
+	<div id="contact" class="footer">
+			<div class="footer-right">
+			<h4>HEAD OFFICE</h4>
+			<p>Survey no 88, bhandalkar nagar, Manjari Farms, pune solapur road, Hadapsar, pune - 412307<br />Ph no - 9921404646</p>
+			<h4>BRANCH OFFICE</h4>
+			<p>Ground floor, Praganya Residency, Behind Market yard, Rajgurunagar(Khed/Chakan), pune - 410505<br />Ph no - 9822522025</p>
+
+		</div>
+		<div class="footer-left">
+			<div class="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15133.810524287213!2d73.94186025!3d18.508437!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1548583803834" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			<div class="map-color">
+				<ul>
+						<li> <i class="glyphicon glyphicon-map-marker"> </i> Majari Farms, hadapsar, Pune - 411028</li>
+						<li><i class="glyphicon glyphicon-earphone"> </i> +91 9921404646</li>
+						<li><i class="glyphicon glyphicon-envelope"> </i> <a href="soma15184@gmail.com">kdinfra.com</a></li>
+				</ul>
+			</div>
+			<p> &copy; KD Infrastructurs. All rights reserved | Design by <a href="http://tecnovations.in/">Tecnovations</a></p>
+
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+<!-- //footer -->
+	<!--//main content start-->
+	<!--start-smooth-scrolling-->
+						<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear'
+								 		};
+										*/
+
+										$().UItoTop({ easingType: 'easeOutQuart' });
+
+									});
+								</script>
+								<!--end-smooth-scrolling-->
+		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!-- //for bootstrap working -->
+
+<!-- js -->
+<script src="js/modernizr.custom.js"></script>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+</script>
+
+<!-- //js -->
+<script type="text/javascript">
+										 $('.main-search').hide();
+										$('button').click(function (){
+											$('.main-search').show();
+											$('.main-search text').focus();
+										}
+										);
+										$('.close').click(function(){
+											$('.main-search').hide();
+										});
+									</script>
+										<!-- script-for-menu -->
+				<script>
+				$( "span.menu" ).click(function() {
+				  $( ".top-menu" ).slideToggle( "slow", function() {
+				    // Animation complete.
+				  });
+				});
+			</script>
+				<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager:false,
+			        nav:true,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+
+			    });
+			  </script>
+			   <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider3").responsiveSlides({
+			        auto: true,
+			        pager:true,
+			        nav:false,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+
+			    });
+			  </script>
+	      <!--banner Slider starts Here-->
+<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+				<script type="text/javascript">
+									$(document).ready(function () {
+										$('#horizontalTab').easyResponsiveTabs({
+											type: 'default', //Types: default, vertical, accordion
+											width: 'auto', //auto or any width like 600px
+											fit: true   // 100% fit in a container
+										});
+									});
+
+				</script>
+				<script type="text/javascript">
+						 $(window).load(function() {
+							$("#flexiselDemo3").flexisel({
+								visibleItems:2,
+								animationSpeed: 1000,
+								autoPlay: true,
+								autoPlaySpeed: 3000,
+								pauseOnHover: true,
+								enableResponsiveBreakpoints: true,
+								responsiveBreakpoints: {
+									portrait: {
+										changePoint:480,
+										visibleItems:2
+									},
+									landscape: {
+										changePoint:640,
+										visibleItems:2
+									},
+									tablet: {
+										changePoint:768,
+										visibleItems:3
+									}
+								}
+							});
+
+						});
+					   </script>
+					   <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Industrial Fabrication</h3>
+                        <img src="images/fab1.jpeg" class="img-responsive img-centered" alt="">
+                        <p>Industrial fabrication.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Image-Title</h3>
+                        <img src="images/fab13.jpeg" class="img-responsive img-centered" alt="">
+                        <p>Industrial Fabrication</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Industrial Fabrication</h3>
+                        <img src="images/fab8.jpeg" class="img-responsive img-centered" alt="">
+                        <p>Industrial Fabrication</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Industrial Fabrication</h3>
+                        <img src="images/fab14.jpeg" class="img-responsive img-centered" alt="">
+                        <p>Industrial Fabrication</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Industrial Flooring</h3>
+                        <img src="images/ifloor.jpeg" class="img-responsive img-centered" alt="">
+                        <p>Industrial Flooring</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Residential Construction</h3>
+                        <img src="images/const1.jpeg" class="img-responsive img-centered" alt="">
+                        <p>Residential Construction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Residential Construction</h3>
+                        <img src="images/const2.jpeg" class="img-responsive img-centered" alt="">
+                        <p>Residential Construction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal21" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Industrial Fabrication</h3>
+                        <img src="images/fab21.jpeg" class="img-responsive img-centered" alt="">
+                        <p>Industrial Fabrication</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal22" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Industrial Fabrication</h3>
+                        <img src="images/fab22.jpeg" class="img-responsive img-centered" alt="">
+                        <p>Industrial Fabrication</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="portfolio-modal modal fade slideanim" id="portfolioModa23" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Industrial Fabrication</h3>
+                        <img src="images/fab23.jpeg" class="img-responsive img-centered" alt="">
+                        <p>Industrial Fabrication</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal24" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Industrial Fabrication</h3>
+                        <img src="images/fab24.jpeg" class="img-responsive img-centered" alt="">
+                        <p>Industrial Fabrication</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal31" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Residential Construction</h3>
+                        <img src="images/const2.jpeg" class="img-responsive img-centered" alt="">
+                        <p>Residential Construction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal32" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Residential Construction</h3>
+                        <img src="images/const2.jpeg" class="img-responsive img-centered" alt="">
+                        <p>Residential Construction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal33" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Residential Construction</h3>
+                        <img src="images/const2.jpeg" class="img-responsive img-centered" alt="">
+                        <p>Residential Construction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal34" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Residential Construction</h3>
+                        <img src="images/const2.jpeg" class="img-responsive img-centered" alt="">
+                        <p>Residential Construction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal41" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Residential Construction</h3>
+                        <img src="images/const2.jpeg" class="img-responsive img-centered" alt="">
+                        <p>Residential Construction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal42" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Residential Construction</h3>
+                        <img src="images/const2.jpeg" class="img-responsive img-centered" alt="">
+                        <p>Residential Construction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal43" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Residential Construction</h3>
+                        <img src="images/const2.jpeg" class="img-responsive img-centered" alt="">
+                        <p>Residential Construction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal44" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Residential Construction</h3>
+                        <img src="images/const2.jpeg" class="img-responsive img-centered" alt="">
+                        <p>Residential Construction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal51" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Residential Construction</h3>
+                        <img src="images/const2.jpeg" class="img-responsive img-centered" alt="">
+                        <p>Residential Construction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal52" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Residential Construction</h3>
+                        <img src="images/const2.jpeg" class="img-responsive img-centered" alt="">
+                        <p>Residential Construction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal53" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Residential Construction</h3>
+                        <img src="images/const2.jpeg" class="img-responsive img-centered" alt="">
+                        <p>Residential Construction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Industrial Construction</h3>
+                        <img src="images/iconst1.jpeg" class="img-responsive img-centered" alt="">
+                        <p>Industrial Construction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+                        <img src="images/pic1.jpg" class="img-responsive img-centered" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- //for bootstrap working -->
+
+
+</body>
+</html>
